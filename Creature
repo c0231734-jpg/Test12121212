@@ -1,0 +1,48 @@
+{
+  "name": "Creature",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "lore": {
+      "type": "string"
+    },
+    "habitat": {
+      "type": "string"
+    },
+    "threat_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "moderate",
+        "high",
+        "extreme",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "slug"
+  ]
+}

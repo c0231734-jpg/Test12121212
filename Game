@@ -1,0 +1,48 @@
+{
+  "name": "Game",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "concept",
+        "pre_production",
+        "in_development",
+        "alpha",
+        "beta",
+        "released"
+      ],
+      "default": "in_development"
+    },
+    "cover_url": {
+      "type": "string"
+    },
+    "engine": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "roblox_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
